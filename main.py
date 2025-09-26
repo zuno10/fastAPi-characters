@@ -19,7 +19,7 @@ model = genai.GenerativeModel('gemini-2.0-flash')
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173",
+    "https://zuno10.github.io/",
     "http://127.0.0.1:5173",
 ]
 
