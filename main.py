@@ -19,8 +19,8 @@ model = genai.GenerativeModel('gemini-2.0-flash')
 app = FastAPI()
 
 origins = [
-    "https://zuno10.github.io/",
-    "http://127.0.0.1:5173",
+    "*",
+    # "http://127.0.0.1:5173",
 ]
 
 app.add_middleware(
