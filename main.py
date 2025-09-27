@@ -19,14 +19,14 @@ model = genai.GenerativeModel('gemini-2.0-flash')
 app = FastAPI()
 
 origins = [
-    "https://zuno10.github.io/bahrupiya/",
+    "https://zuno10.github.io/",
     "http://127.0.0.1:5173",
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
-    expose_headers=["*"]
+    expose_headers=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
