@@ -14,7 +14,7 @@ load_dotenv()
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
 # Create an instance of the GenerativeModel
-model = genai.GenerativeModel('gemini-2.0-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 app = FastAPI()
 
